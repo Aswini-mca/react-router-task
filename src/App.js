@@ -1,84 +1,102 @@
 import './App.css';
 import { Routes, Route, Link } from "react-router-dom";
+import logo from './images/Guvi-blog-logo.png';
+import guviLogo from './images/blog-header-2048x315.png';
+import pic1 from './images/image-blz-blog-gui-testing-introduction_0.png';
+import pic2 from './images/images.jpg';
+import pic3 from './images/images1.png';
+import pic4 from './images/The-Top-10-Tools-Every-Full-Stack-Developer-Should-Master-in-2023.png';
+import pic5 from './images/The-Ultimate-Guide-to-Real-World-Full-Stack-Development-Applications.png';
+import pic6 from './images/best-way-to-learn-full-stack-development.png';
+import pic7 from './images/feature-image-Best-Data-Science-Online-Courses-for-Beginners.png';
+import pic8 from './images/Everything-about-Data-Scientist-Salary-in-India-2023.png';
+import pic9 from './images/best-data-science-frameworks.png';
+import pic10 from './images/Yellow-Blue-Illustration-Business-Blog-Banner.png';
+import pic11 from './images/cybersecuity-.gif';
+import pic12 from './images/Blue-Purple-Futuristic-Virus-Hacks-Youtube-Thumbnail.png';
+import pic13 from './images/featured-image-how-to-become-ui-ux-designer.png';
+import pic14 from './images/Game-Development-Career-101.jpg';
+import pic15 from './images/feature-image-Skills-Required-to-Become-a-Digital-Marketer.webp';
+
 
 //course details array of objects
 const courseDetails = [{
-  image: "https://www.blazemeter.com/sites/default/files/image/2022-06/image-blz-blog-gui-testing-introduction_0.jpg",
+  image: pic1,
   courseName: "Automation Test Engineer Roles and Responsibilities in 2023",
   courseDescription: "A web developer develops the application to its best, but what happens after that? Who takes care of the quality of the applications?",
 },
 {
-  image: "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQXURlbml9yWO3nYEJosGWxgNIv5VPzsIoOXrvr1t1HC1ts4bL5",
+  image:pic2,
   courseName: "7 Best Automation Testing Project Ideas",
   courseDescription: "Are you an automation testing enthusiast looking for some exciting project ideas to enhance your skills?",
 },
 {
-  image: "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQc_wKptWW0UhV4yI4FVhJ--88f5Sd2PLdk0JVdkJ1UYJVrYGDD",
+  image: pic3,
   courseName: "How Long Would it Take to Learn Motion Graphics?",
   courseDescription: "Motion graphics is like creating moving pictures with design and animation. It’s a cool way to make things look lively and interesting.",
 }]
 
  const courseFullstack =[{
-  image: "https://www.guvi.in/blog/wp-content/uploads/2023/08/The-Top-10-Tools-Every-Full-Stack-Developer-Should-Master-in-2023.png",
+  image: pic4,
   courseName: "The Top 10 Tools Every Full Stack Developer Should Master in 2023",
   courseDescription: "As a full stack developer, having the right set of tools is crucial for your success. In the ever-evolving world of web development,",
  },
  {
-  image: "https://www.guvi.in/blog/wp-content/uploads/2023/08/The-Ultimate-Guide-to-Real-World-Full-Stack-Development-Applications.png",
+  image: pic5,
   courseName: "The Ultimate Guide to Real-World Full Stack Development Applications",
   courseDescription: "Full stack development has become increasingly popular in recent years, with companies seeking professionals who can handle both front-end and back-end tasks.",
  },
  {
-  image: "https://www.guvi.in/blog/wp-content/uploads/2023/07/best-way-to-learn-full-stack-development.webp",
+  image: pic6,
   courseName: "Best Ways to Learn Full Stack Development in 2023",
   courseDescription: "Full stack development is and will be a promising and an in-demand career in the upcoming years. According to Stack Overflow,",
  }
 ]
 
 const courseDatascience =[{
-  image: "https://www.guvi.in/blog/wp-content/uploads/2023/08/feature-image-Best-Data-Science-Online-Courses-for-Beginners.webp",
+  image: pic7,
   courseName: "10 Best Data Science Online Courses for Beginners | 2023",
   courseDescription: "In today’s rapidly evolving digital landscape, Data Science has emerged as one of the most sought-after Technical fields.",
  },
  {
-  image: "https://www.guvi.in/blog/wp-content/uploads/2023/08/Everything-about-Data-Scientist-Salary-in-India-2023.png",
+  image: pic8,
   courseName: "Everything about Data Scientist Salary in India | 2023",
   courseDescription: "Are you curious about the highly sought-after field of data science and the potential it holds for your career?",
  },
  {
-  image: "https://www.guvi.in/blog/wp-content/uploads/2023/07/best-data-science-frameworks.webp",
+  image: pic9,
   courseName: "10 Best Data Science Frameworks in 2023",
   courseDescription: "Does data scientists fascinate you? If yes, you must definitely know about data science frameworks. These frameworks are used by data scientists to easier their work",
  }]
 
  const courseCybersecurity = [{
-  image: "https://www.guvi.in/blog/wp-content/uploads/2022/12/Yellow-Blue-Illustration-Business-Blog-Banner.png",
+  image: pic10,
   courseName: "Cybersecurity Vs Ethical Hacking: Top 10 Differences",
   courseDescription: "Cybersecurity & Ethical hacking and have been key in making sure that your data online is secure, users are authenticated & your data and privacy concerns are all kept safe.",
  },
  {
-  image: "https://www.guvi.in/blog/wp-content/uploads/2022/12/cybersecuity-.gif",
+  image: pic11,
   courseName: "What is Cybersecurity? Importance and its uses & the growing challenges in 2023!",
   courseDescription: "Look around today, you will witness that we are more reliant on technology and devices than ever before. Benefits of this trend range from getting rid of Yellowbook, ",
  },
  {
-  image: "https://www.guvi.in/blog/wp-content/uploads/2022/11/Blue-Purple-Futuristic-Virus-Hacks-Youtube-Thumbnail.png",
+  image: pic12,
   courseName: "Top 10 Ethical Hacking Books for Beginner to Advanced",
   courseDescription: "Before jumping into the list of the top 10 ethical hacking books, let’s speak a bit about cybersecurity. I’m sure you already know “what cybersecurity is” but here’s a refresher.",
  }]
 
  const courseCareer = [{
-  image: "https://www.guvi.in/blog/wp-content/uploads/2023/08/featured-image-how-to-become-ui-ux-designer.webp",
+  image: pic13,
   courseName: "How to Become a UI/UX Designer: 10 Steps to Master the Craft",
   courseDescription: "Have you ever wondered what it takes to create captivating designs that leave users delighted and eager for more? Are you fascinated by the user experience of your favorite apps or websites?",
  },
  {
-  image: "https://www.guvi.in/blog/wp-content/uploads/2021/04/Game-Development-Career-101.jpg",
+  image: pic14,
   courseName: "Game Development Career 2023: The Ultimate Beginners Guide",
   courseDescription: "The game development industry has undergone a remarkable evolution over the years, witnessing exhilarating changes with each passing moment.",
  },
  {
-  image: "https://www.guvi.in/blog/wp-content/uploads/2023/08/feature-image-Skills-Required-to-Become-a-Digital-Marketer.webp",
+  image: pic15,
   courseName: "Top Skills Required to Become a Digital Marketer",
   courseDescription: "Digital marketing is one of the most dynamic industries that has transformed how businesses connect with their target audience. ",
  }]
@@ -89,7 +107,7 @@ export default function App() {
     {/* navbar */}
  
       <nav className="navbar navbar-expand-sm bg-body-tertiary ">
-        <img src='https://www.guvi.in/blog/wp-content/uploads/2022/04/Guvi-blog-logo.png' alt='' />
+        <img src={logo} alt='' />
 
         <div className="container-fluid">
           <div className="collapse navbar-collapse" id="navbarNav">
@@ -143,7 +161,7 @@ export default function App() {
       </nav>
       <hr />
       <div className='container-fluid text-center'>
-      <img height={"200px"} width={"1000px"} src='https://www.guvi.in/blog/wp-content/uploads/2022/10/blog-header-2048x315.png' alt='' />
+      <img height={"200px"} width={"1000px"} src={guviLogo} alt='' />
       </div>
       <Navigation />
       
